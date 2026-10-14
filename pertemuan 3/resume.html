@@ -1,76 +1,131 @@
+
 <!DOCTYPE html>
 <html lang="id">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Resume - Portfolio</title>
-
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            margin: 0;
-            padding: 0;
-            background-color: #f5f5f5;
-        }
-
-        header {
-            background-color: #222;
-            color: white;
-            padding: 20px;
-            text-align: center;
-        }
-
-        .container {
-            width: 80%;
-            margin: 30px auto;
-            background: white;
-            padding: 30px;
-            border-radius: 10px;
-        }
-
-        h2 {
-            color: #333;
-        }
-
-        ul {
-            line-height: 2;
-        }
-    </style>
+    <title>Resume | Portofolio Rival</title>
+    <link rel="stylesheet" href="style.css">
 </head>
+<body class="subpage">
 
-<body>
-
-    <header>
-        <h1>Resume</h1>
-        <p>Portfolio Saya</p>
+    <header class="navbar">
+        <a href="index.html" class="logo">RIVAL<span>.</span></a>
+        <nav>
+            <ul>
+                <li><a href="index.html">Beranda</a></li>
+                <li><a href="project.html">Project</a></li>
+                <li><a href="resume.html" class="active">Resume</a></li>
+                <li><a href="kontak.html" class="contact-link">Kontak Saya ↗</a></li>
+            </ul>
+        </nav>
     </header>
 
-    <div class="container">
+    <main class="page-content">
+        <section class="page-hero">
+            <span class="section-label">PROFIL SINGKAT</span>
+            <h1>Resume <span>Rival.</span></h1>
+            <p>
+                Ringkasan pendidikan, kemampuan, dan perjalanan
+                saya dalam mempelajari pengembangan web.
+            </p>
+        </section>
 
-        <h2>Data Diri</h2>
-        <p><strong>Nama:</strong> Rival Arizal Sutisna</p>
-        <p><strong>NIM:</strong> 2406064</p>
+        <section class="resume-layout">
 
-        <h2>Pendidikan</h2>
-        <ul>
-            <li>Mahasiswa</li>
-        </ul>
+            <article class="resume-card">
+                <div class="resume-icon">🎓</div>
+                <h2>Pendidikan</h2>
 
-        <h2>Keahlian</h2>
-        <ul>
-            <li>HTML</li>
-            <li>CSS</li>
-            <li>JavaScript</li>
-            <li>Git & GitHub</li>
-        </ul>
+                <div class="timeline">
+                    <div class="timeline-item">
+                        <span class="timeline-dot"></span>
+                        <span class="timeline-label">Saat ini</span>
+                        <h3>Mahasiswa</h3>
+                        <p>
+                            Sedang menempuh pendidikan dan mengembangkan
+                            pengetahuan di bidang teknologi.
+                        </p>
+                    </div>
+                </div>
+            </article>
 
-        <h2>Pengalaman / Project</h2>
-        <ul>
-            <li>Website Portfolio</li>
-            <li>Project Pemrograman Web</li>
-        </ul>
+            <article class="resume-card">
+                <div class="resume-icon">💻</div>
+                <h2>Kemampuan</h2>
 
-    </div>
+                <div class="skill-item">
+                    <div class="skill-heading">
+                        <span>HTML</span>
+                        <span>Dasar</span>
+                    </div>
+                    <div class="skill-track">
+                        <div class="skill-progress html-progress"></div>
+                    </div>
+                </div>
+
+                <div class="skill-item">
+                    <div class="skill-heading">
+                        <span>CSS</span>
+                        <span>Dasar</span>
+                    </div>
+                    <div class="skill-track">
+                        <div class="skill-progress css-progress"></div>
+                    </div>
+                </div>
+
+                <div class="skill-item">
+                    <div class="skill-heading">
+                        <span>Web Design</span>
+                        <span>Sedang belajar</span>
+                    </div>
+                    <div class="skill-track">
+                        <div class="skill-progress design-progress"></div>
+                    </div>
+                </div>
+            </article>
+
+            <article class="resume-card full-width">
+                <div class="resume-icon">🚀</div>
+                <h2>Perjalanan Proyek</h2>
+
+                <div class="timeline">
+                    <div class="timeline-item">
+                        <span class="timeline-dot"></span>
+                        <span class="timeline-label">Proyek latihan</span>
+                        <h3>Aplikasi Kasir Sederhana</h3>
+                        <p>
+                            Mempelajari konsep transaksi, perhitungan
+                            total belanja, dan pengelolaan data.
+                        </p>
+                    </div>
+
+                    <div class="timeline-item">
+                        <span class="timeline-dot"></span>
+                        <span class="timeline-label">Proyek latihan</span>
+                        <h3>Kalkulator Sederhana</h3>
+                        <p>
+                            Mempelajari rancangan antarmuka dan konsep
+                            operasi matematika dalam aplikasi.
+                        </p>
+                    </div>
+                </div>
+            </article>
+
+        </section>
+
+        <section class="callout">
+            <h2>Terus berkembang setiap hari.</h2>
+            <p>Saya siap belajar hal baru dan berkolaborasi.</p>
+            <a href="kontak.html" class="btn-light">Hubungi Saya ↗</a>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <a href="index.html" class="logo footer-logo">RIVAL<span>.</span></a>
+        <p>Terus belajar, terus berkembang.</p>
+        <p class="copyright">&copy; 2026 Portofolio Rival.</p>
+    </footer>
 
 </body>
 </html>
