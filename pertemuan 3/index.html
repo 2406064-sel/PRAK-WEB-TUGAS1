@@ -1,74 +1,323 @@
+```html
 <!DOCTYPE html>
-<html lang="en">
+<html lang="id">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portofolio Mahasiswa</title>
+
+    <title>Portofolio Rival | Mahasiswa</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <header>
-        <h1>Portofolio Mahasiswa</h1>
+
+    <!-- NAVBAR -->
+    <header class="navbar">
+        <a href="index.html" class="logo">
+            RIVAL<span>.</span>
+        </a>
+
         <nav>
-           <ul>
-            <li>
-                <a href="index.html">Beranda</a>
-            </li>
-            <li>
-                <a href="kontak.html">kontak saya</a>
-            </li>
-           </ul>
+            <ul>
+                <li><a href="#beranda" class="active">Beranda</a></li>
+                <li><a href="#tentang">Tentang Saya</a></li>
+                <li><a href="#project">Project</a></li>
+                <li><a href="kontak.html" class="contact-link">Kontak Saya ↗</a></li>
+            </ul>
         </nav>
     </header>
 
-    <hr />
-
     <main>
-        <section>
-            <h2>Tentang saya</h2>
-            <p>Halo nama saya Rival, saat ini sedang belajar pemrograman web!!!
 
-            </p>
+        <!-- HERO -->
+        <section class="hero" id="beranda">
+            <div class="hero-content">
+                <span class="badge">
+                    ● Mahasiswa & Web Developer Pemula
+                </span>
+
+                <h1>
+                    Halo, Saya Rival.<br>
+                    <span>Suka Membuat</span><br>
+                    Sesuatu yang Kreatif.
+                </h1>
+
+                <p>
+                    Selamat datang di portofolio saya.
+                    Saya sedang belajar pemrograman web dan
+                    mengembangkan berbagai proyek digital
+                    untuk meningkatkan kemampuan saya.
+                </p>
+
+                <div class="hero-buttons">
+                    <a href="#project" class="btn-primary">
+                        Lihat Project →
+                    </a>
+
+                    <a href="kontak.html" class="btn-secondary">
+                        Hubungi Saya
+                    </a>
+                </div>
+
+                <div class="hero-info">
+                    <div>
+                        <h3>02+</h3>
+                        <p>Proyek Saya</p>
+                    </div>
+
+                    <div>
+                        <h3>HTML & CSS</h3>
+                        <p>Teknologi yang Dipelajari</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="hero-visual">
+                <div class="decor decor-one"></div>
+                <div class="decor decor-two"></div>
+
+                <div class="profile-card">
+                    <div class="profile-top">
+                        <span class="window-dot red"></span>
+                        <span class="window-dot yellow"></span>
+                        <span class="window-dot green"></span>
+                        <span class="profile-label">my-portfolio.html</span>
+                    </div>
+
+                    <div class="profile-icon">&lt;/&gt;</div>
+
+                    <p class="code-line">
+                        <span>const</span> name = "Rival";
+                    </p>
+
+                    <p class="code-line">
+                        <span>const</span> role = "Student";
+                    </p>
+
+                    <p class="code-line">
+                        <span>const</span> passion = "Web Development";
+                    </p>
+
+                    <div class="profile-status">
+                        <span class="status-dot"></span>
+                        Terus belajar, terus berkembang
+                    </div>
+                </div>
+            </div>
         </section>
 
-        <hr />
+        <!-- TENTANG SAYA -->
+        <section class="about section-container" id="tentang">
+            <div class="section-heading">
+                <span class="section-label">KENALI SAYA</span>
+                <h2>Tentang Saya</h2>
+                <p>
+                    Mengenal lebih dekat perjalanan saya
+                    dalam dunia teknologi.
+                </p>
+            </div>
 
-        <section>
-            <h2>Project Saya</h2>
-            <article>
-                <header>
-                    <h3>
-                        Aplikasi Kasir Sederhana 
-                    </h3>
-                    <h3>Fitur:</h3>
-                    <ul>
-                        <li>Autentikasi google</li>
-                        <li>Otomatisasi Penjumlahan Hasil</li>
-                        <li>Expor ke excel</li>
-                    </ul>
-                </header>
-                <header>
-                    <h3>Kalkulator Sederhana</h3>
-                    <h3>Fitur:</h3>
-                    <ul>
-                        <li>Autentikasi google</li>
-                        <li>Otomatisasi Penjumlahan Hasil</li>
-                        <li>Expor ke excel</li>
-                    </ul>
-                </header>
-            </article>
+            <div class="about-card">
+                <div class="about-symbol">R.</div>
+
+                <div class="about-text">
+                    <h3>Mahasiswa yang Senang Belajar</h3>
+
+                    <p>
+                        Halo, nama saya Rival. Saat ini saya sedang
+                        mempelajari pemrograman web, khususnya
+                        HTML dan CSS. Saya tertarik membuat website
+                        yang menarik, mudah digunakan, dan
+                        bermanfaat bagi banyak orang.
+                    </p>
+
+                    <p>
+                        Melalui berbagai proyek sederhana, saya
+                        terus berusaha meningkatkan kemampuan
+                        coding, kreativitas, dan pemahaman saya
+                        dalam pengembangan website.
+                    </p>
+
+                    <div class="skills">
+                        <span>HTML</span>
+                        <span>CSS</span>
+                        <span>Web Design</span>
+                        <span>Problem Solving</span>
+                    </div>
+                </div>
+            </div>
         </section>
+
+        <!-- PROJECT -->
+        <section class="projects section-container" id="project">
+            <div class="section-heading">
+                <span class="section-label">HASIL KARYA</span>
+                <h2>Project Saya</h2>
+                <p>
+                    Beberapa proyek yang saya pelajari dan
+                    kembangkan untuk melatih kemampuan.
+                </p>
+            </div>
+
+            <div class="project-grid">
+
+                <!-- PROJECT 1 -->
+                <article class="project-card">
+                    <div class="project-image cashier-image">
+                        <div class="mock-window">
+                            <div class="mock-header">
+                                <span>KasirKu</span>
+                                <span>☰</span>
+                            </div>
+
+                            <div class="mock-total">
+                                <small>Total Belanja</small>
+                                <strong>Rp150.000</strong>
+                            </div>
+
+                            <div class="mock-row">
+                                <span>Produk A</span>
+                                <span>Rp50.000</span>
+                            </div>
+
+                            <div class="mock-row">
+                                <span>Produk B</span>
+                                <span>Rp100.000</span>
+                            </div>
+
+                            <div class="mock-button">Proses Transaksi</div>
+                        </div>
+                    </div>
+
+                    <div class="project-content">
+                        <span class="project-number">PROJECT 01</span>
+
+                        <h3>Aplikasi Kasir Sederhana</h3>
+
+                        <p>
+                            Konsep aplikasi kasir untuk membantu
+                            proses transaksi, menghitung total
+                            belanja, dan mengelola data penjualan.
+                        </p>
+
+                        <h4>Fitur yang direncanakan:</h4>
+
+                        <ul class="feature-list">
+                            <li>Autentikasi menggunakan Google</li>
+                            <li>Perhitungan total belanja otomatis</li>
+                            <li>Ekspor laporan ke Excel</li>
+                        </ul>
+
+                        <div class="project-tags">
+                            <span>Web App</span>
+                            <span>Kasir</span>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- PROJECT 2 -->
+                <article class="project-card">
+                    <div class="project-image calculator-image">
+                        <div class="calculator">
+                            <div class="calculator-display">
+                                <small>Hasil Perhitungan</small>
+                                <strong>1.234 + 567</strong>
+                                <span>1.801</span>
+                            </div>
+
+                            <div class="calculator-keys">
+                                <span>AC</span>
+                                <span>±</span>
+                                <span>%</span>
+                                <span class="operator">÷</span>
+
+                                <span>7</span>
+                                <span>8</span>
+                                <span>9</span>
+                                <span class="operator">×</span>
+
+                                <span>4</span>
+                                <span>5</span>
+                                <span>6</span>
+                                <span class="operator">−</span>
+
+                                <span>1</span>
+                                <span>2</span>
+                                <span>3</span>
+                                <span class="operator">+</span>
+
+                                <span>0</span>
+                                <span>00</span>
+                                <span>.</span>
+                                <span class="operator">=</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="project-content">
+                        <span class="project-number">PROJECT 02</span>
+
+                        <h3>Kalkulator Sederhana</h3>
+
+                        <p>
+                            Konsep kalkulator digital untuk
+                            melakukan perhitungan matematika
+                            dasar dengan tampilan sederhana.
+                        </p>
+
+                        <h4>Fitur yang direncanakan:</h4>
+
+                        <ul class="feature-list">
+                            <li>Operasi tambah dan kurang</li>
+                            <li>Operasi kali dan bagi</li>
+                            <li>Tombol hapus dan reset perhitungan</li>
+                        </ul>
+
+                        <div class="project-tags">
+                            <span>Kalkulator</span>
+                            <span>UI Design</span>
+                        </div>
+                    </div>
+                </article>
+
+            </div>
+        </section>
+
+        <!-- STATUS PEKERJAAN -->
+        <section class="availability section-container">
+            <div class="availability-card">
+                <div>
+                    <span class="section-label">STATUS SAYA</span>
+                    <h2>Terbuka untuk Pengalaman Baru</h2>
+                    <p>
+                        Saya terbuka untuk belajar, berkolaborasi,
+                        dan menerima proyek freelance sesuai
+                        kemampuan saya.
+                    </p>
+                </div>
+
+                <a href="kontak.html" class="btn-light">
+                    Mari Terhubung ↗
+                </a>
+            </div>
+        </section>
+
     </main>
 
-    <hr />
+    <!-- FOOTER -->
+    <footer class="footer">
+        <a href="#beranda" class="logo footer-logo">
+            RIVAL<span>.</span>
+        </a>
 
-    <aside>
-        <h3>Status Pekerjaan</h3>
-        <p>Bisa menerima project freelance</p>
-    </aside>
+        <p>
+            Dibuat dengan semangat belajar dan kreativitas.
+        </p>
 
-    <footer>
-        <p>&copy; Teknik Transformer 2023</p>
+        <p class="copyright">
+            &copy; 2026 Portofolio Rival. Semua hak dilindungi.
+        </p>
     </footer>
+
 </body>
 </html>
+```
