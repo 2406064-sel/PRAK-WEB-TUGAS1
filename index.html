@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Modul 5 - To-Do List</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <h1>Daftar Tugas</h1>
+  
+  <!-- Fitur 1: Task Counter -->
+  <div id="taskCounter" class="counter">
+    Total: 0 Tugas | Selesai: 0 | Belum Selesai: 0
+  </div>
+
+  <div class="input-group">
+    <input type="text" id="taskInput" placeholder="Tambah tugas baru...">
+    <button onclick="addTask()">Tambah</button>
+  </div>
+
+  <ul id="taskList"></ul>
+
+  <!-- Fitur 2: Bersihkan Tugas Selesai -->
+  <button class="btn-clear" onclick="clearCompletedTasks()">Bersihkan Tugas Selesai</button>
+
+  <script src="script.js"></script>
+</body>
+</html>
